@@ -1,23 +1,44 @@
 #include <stdio.h>
+#include "main.h"
 /**
- *  main - Entery Point
- *  Return: 0(Success)
+ * jack_bauer - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-int main(void)
+
+void jack_bauer(void)
 {
-  char a, b;
+	int i;
+	int j;
+	int k;
+	int z;
+	int hr2;
 
-  b = '0';
-  while (b <= '9')
-  {
-    putchar(b);
-    b++;
-  }
-  for (a = 'a'; a <= 'f'; a++)
-  {
-    putchar(a);
-  }
+	for (i = 48; i < 51; i++)
+	{
+		if (i == 50)
+		{
+			hr2 = 51;
+		}
+		else if (i != 50)
+		{
+			hr2 = 57;
+		}
+		for (j = 48; j <= hr2; j++)
+		{
+			for (k = 48; k < 54; k++)
+			{
+				for (z = 48; z <= 57; z++)
+				{
+					_putchar(i);
+					_putchar(j);
+					_putchar(':');
+					_putchar(k);
+					_putchar(z);
+					_putchar('\n');
+				}
+			}
+		}
+	}
 
-  putchar('\n');
-  return (0);
 }

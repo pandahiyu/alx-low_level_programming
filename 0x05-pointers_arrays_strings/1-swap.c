@@ -1,14 +1,15 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * swap_int - a function swap a variables value
+ * @a: a first variable we need to change
+ * @b: a second variable memory adress we want to swap
+ * Return: void
  */
-int _putchar(char c)
+void swap_int(int *a, int *b)
 {
-	return (write(1, &c, 1));
+	int tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

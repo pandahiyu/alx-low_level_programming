@@ -2,8 +2,9 @@
 #define MAIN_H
 
 /**
- * Header file containing prototypes for all functions
- * used in the 0x08-recursion directory.
+ * File: main.h
+ * Desc: Header file containing prototypes for all functions
+ *       used in the 0x07-recursion directory.
  */
 
 int _putchar(char c);
